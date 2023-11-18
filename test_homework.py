@@ -50,16 +50,16 @@ def test_random_list():
     """
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
     """
-    a = random.randint(0, 100)
-    b = random.randint(0, 100)
-    c = random.randint(0, 100)
-    d = random.randint(0, 100)
-    e = random.randint(0, 100)
-    f = random.randint(0, 100)
-    g = random.randint(0, 100)
-    h = random.randint(0, 100)
-    i = random.randint(0, 100)
-    j = random.randint(0, 100)
+    a = random.randint(1, 101)
+    b = random.randint(1, 101)
+    c = random.randint(1, 101)
+    d = random.randint(1, 101)
+    e = random.randint(1, 101)
+    f = random.randint(1, 101)
+    g = random.randint(1, 101)
+    h = random.randint(1, 101)
+    i = random.randint(1, 101)
+    j = random.randint(1, 101)
     # TODO создайте список
     l = [a, b, c, d, e, f, g, h, i, j]
     l.sort()
@@ -90,5 +90,6 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(first, second))
+    print(d)
     assert isinstance(d, dict)
     assert len(d) == 5
